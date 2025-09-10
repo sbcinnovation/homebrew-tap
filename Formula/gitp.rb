@@ -5,23 +5,23 @@
 class Gitp < Formula
   desc "Pretty git branch exploration for the terminal"
   homepage "https://github.com/sbcinnovation/gitp"
-  version "0.8.0"
+  version "0.8.1"
   license "MIT"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sbcinnovation/gitp/releases/download/v0.8.0/gitp_0.8.0_darwin_amd64.tar.gz"
-      sha256 "94f107e6f9d479a7d2837774256dfc6111e49ccc76a11bd42c540bc8cc9cc00f"
+      url "https://github.com/sbcinnovation/gitp/releases/download/v0.8.1/gitp_0.8.1_darwin_amd64.tar.gz"
+      sha256 "9f1c47fc295bdd675f9af93632562021cb6bc0f458c039b9fe54f010300562e2"
 
       def install
         bin.install "gitp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sbcinnovation/gitp/releases/download/v0.8.0/gitp_0.8.0_darwin_arm64.tar.gz"
-      sha256 "5326426c7e68b4422448193cbc77bca900a7f7967f32045ddfe3f814fb2849f1"
+      url "https://github.com/sbcinnovation/gitp/releases/download/v0.8.1/gitp_0.8.1_darwin_arm64.tar.gz"
+      sha256 "422f1eda6a9dd0ab6e18ad931a6e21f7984bf6326c450746adf594479535ed0e"
 
       def install
         bin.install "gitp"
@@ -31,15 +31,15 @@ class Gitp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sbcinnovation/gitp/releases/download/v0.8.0/gitp_0.8.0_linux_amd64.tar.gz"
-      sha256 "c6774cd75c0b8e4c5216c622b8304bac33e705c1fae79f0a49d73fa769727148"
+      url "https://github.com/sbcinnovation/gitp/releases/download/v0.8.1/gitp_0.8.1_linux_amd64.tar.gz"
+      sha256 "2fc9254f2cebbb24abcc0fac36412a06031f7cf5d632ae33946d08b9451a38c9"
       def install
         bin.install "gitp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sbcinnovation/gitp/releases/download/v0.8.0/gitp_0.8.0_linux_arm64.tar.gz"
-      sha256 "45c23e24512eac8b72ab98569ab849f9c2f7cc418733b096b83915dadaca4b76"
+      url "https://github.com/sbcinnovation/gitp/releases/download/v0.8.1/gitp_0.8.1_linux_arm64.tar.gz"
+      sha256 "50c8506fc968a17417e0c75d712f0906c82bc3ebc25a7ce137ca3f3f84d88211"
       def install
         bin.install "gitp"
       end
