@@ -5,21 +5,21 @@
 class Squoosh < Formula
   desc "Squoosh CLI – image compression for the terminal"
   homepage "https://github.com/sbcinnovation/sbc-squoosh-cli"
-  version "8.2.9"
+  version "8.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sbcinnovation/squoosh-cli/releases/download/v8.2.9/squoosh_8.2.9_darwin_amd64.tar.gz"
-      sha256 "5a589ddf6ce596a21b050e103906048b110aafc24479b709d551b602a69d73b4"
+      url "https://github.com/sbcinnovation/squoosh-cli/releases/download/v8.3.0/squoosh_8.3.0_darwin_amd64.tar.gz"
+      sha256 "015b3abb61f0881e317efb6caf5ac16381de25facfbac8477af8407add1d7c50"
 
       def install
         bin.install "squoosh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sbcinnovation/squoosh-cli/releases/download/v8.2.9/squoosh_8.2.9_darwin_arm64.tar.gz"
-      sha256 "863e08411ebb490ad2305eb1f618cef95b3f483e34abd1a1a8b4fb64cd96ba2b"
+      url "https://github.com/sbcinnovation/squoosh-cli/releases/download/v8.3.0/squoosh_8.3.0_darwin_arm64.tar.gz"
+      sha256 "53e81abae4ea3c8a47875c0202b8c83002925dfa87b1b89096518eefedc622f4"
 
       def install
         bin.install "squoosh"
@@ -29,15 +29,15 @@ class Squoosh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sbcinnovation/squoosh-cli/releases/download/v8.2.9/squoosh_8.2.9_linux_amd64.tar.gz"
-      sha256 "69e16e95e7c4c812e7de0d1bc7d02e425cfd42bde70ef4fc4d478cb92e2f51e4"
+      url "https://github.com/sbcinnovation/squoosh-cli/releases/download/v8.3.0/squoosh_8.3.0_linux_amd64.tar.gz"
+      sha256 "64544e72840a90b809592e0ca986affc277b5ebb7937d97bc4f8f0c96502613c"
       def install
         bin.install "squoosh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sbcinnovation/squoosh-cli/releases/download/v8.2.9/squoosh_8.2.9_linux_arm64.tar.gz"
-      sha256 "51f575628d3a89dd47b6a7c55ba30c88578816208e5643694c0f51781f100315"
+      url "https://github.com/sbcinnovation/squoosh-cli/releases/download/v8.3.0/squoosh_8.3.0_linux_arm64.tar.gz"
+      sha256 "42c2d6fded2c174ec12ef2fef3c4da90f694cee9a4f884b086c05f8ffee16dd4"
       def install
         bin.install "squoosh"
       end
