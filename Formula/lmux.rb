@@ -5,23 +5,23 @@
 class Lmux < Formula
   desc "A fast, simple, cross-platform tmux session manager"
   homepage "https://github.com/sbcinnovation/lmux"
-  version "0.8.2"
+  version "1.0.0"
   license "MIT"
 
   depends_on "tmux"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sbcinnovation/lmux/releases/download/v0.8.2/lmux_0.8.2_darwin_amd64.tar.gz"
-      sha256 "9f713ec5e9ffb39dfa6a54fa635c0a5fcc12122e647ab173df7a100307518419"
+      url "https://github.com/sbcinnovation/lmux/releases/download/v1.0.0/lmux_1.0.0_darwin_amd64.tar.gz"
+      sha256 "d18c9d8e951d4145020c8dd1ce836d7bc98bd945ba6fbe7602efef4c2d4c2991"
 
       def install
         bin.install "lmux"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sbcinnovation/lmux/releases/download/v0.8.2/lmux_0.8.2_darwin_arm64.tar.gz"
-      sha256 "1a37435df8b76f5dba010e3e034119fc24379c9845c0d1f8e5d3cdba3944b120"
+      url "https://github.com/sbcinnovation/lmux/releases/download/v1.0.0/lmux_1.0.0_darwin_arm64.tar.gz"
+      sha256 "b3f7dae93ef2b6a71911e8048a9044e948b480ad08844b9daa1d834f3b52a8fc"
 
       def install
         bin.install "lmux"
@@ -31,15 +31,15 @@ class Lmux < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sbcinnovation/lmux/releases/download/v0.8.2/lmux_0.8.2_linux_amd64.tar.gz"
-      sha256 "2e604b84410499153ab720c81e52bdbf018b48ef8b2d15d7d4012a5983865f42"
+      url "https://github.com/sbcinnovation/lmux/releases/download/v1.0.0/lmux_1.0.0_linux_amd64.tar.gz"
+      sha256 "25c7ffaa328976ba6820f70d3516f42d73549ca7c29183db629654c2a75919c6"
       def install
         bin.install "lmux"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sbcinnovation/lmux/releases/download/v0.8.2/lmux_0.8.2_linux_arm64.tar.gz"
-      sha256 "e4095259e001113366a9b27ce6118c221eeac2f1dd27299fcad02a22953a8ae5"
+      url "https://github.com/sbcinnovation/lmux/releases/download/v1.0.0/lmux_1.0.0_linux_arm64.tar.gz"
+      sha256 "def71fa07a930f010fdd1652e6a9a513ec5bef4061a734fb15f0db0cbc6f2d8f"
       def install
         bin.install "lmux"
       end
