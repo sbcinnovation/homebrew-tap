@@ -5,25 +5,25 @@
 class Lmux < Formula
   desc "A fast, simple, cross-platform tmux session manager"
   homepage "https://github.com/sbcinnovation/lmux"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   depends_on "tmux"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sbcinnovation/lmux/releases/download/v1.0.0/lmux_1.0.0_darwin_amd64.tar.gz"
-      sha256 "d18c9d8e951d4145020c8dd1ce836d7bc98bd945ba6fbe7602efef4c2d4c2991"
+      url "https://github.com/sbcinnovation/lmux/releases/download/v1.1.0/lmux_1.1.0_darwin_amd64.tar.gz"
+      sha256 "eb96251b41b93915e96db2f129e86e4263f6a069734fdffe3b3b15b0600bf311"
 
-      def install
+      define_method(:install) do
         bin.install "lmux"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sbcinnovation/lmux/releases/download/v1.0.0/lmux_1.0.0_darwin_arm64.tar.gz"
-      sha256 "b3f7dae93ef2b6a71911e8048a9044e948b480ad08844b9daa1d834f3b52a8fc"
+      url "https://github.com/sbcinnovation/lmux/releases/download/v1.1.0/lmux_1.1.0_darwin_arm64.tar.gz"
+      sha256 "9d38bee3d5c5c6ff2ae2023d7480f9311dacdd5272a2129d27f831cfa5a9f29a"
 
-      def install
+      define_method(:install) do
         bin.install "lmux"
       end
     end
@@ -31,16 +31,16 @@ class Lmux < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sbcinnovation/lmux/releases/download/v1.0.0/lmux_1.0.0_linux_amd64.tar.gz"
-      sha256 "25c7ffaa328976ba6820f70d3516f42d73549ca7c29183db629654c2a75919c6"
-      def install
+      url "https://github.com/sbcinnovation/lmux/releases/download/v1.1.0/lmux_1.1.0_linux_amd64.tar.gz"
+      sha256 "4ab389732eb645100ea16ccc30e3f3dd7ec94cf7dacf40391698f618d89f8040"
+      define_method(:install) do
         bin.install "lmux"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sbcinnovation/lmux/releases/download/v1.0.0/lmux_1.0.0_linux_arm64.tar.gz"
-      sha256 "def71fa07a930f010fdd1652e6a9a513ec5bef4061a734fb15f0db0cbc6f2d8f"
-      def install
+      url "https://github.com/sbcinnovation/lmux/releases/download/v1.1.0/lmux_1.1.0_linux_arm64.tar.gz"
+      sha256 "500afc8cda0cd4549f56ac6a2cf2fdc5c891f115d9a13aa41b16bdc485df1c62"
+      define_method(:install) do
         bin.install "lmux"
       end
     end
